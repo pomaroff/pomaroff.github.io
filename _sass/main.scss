@@ -20,6 +20,11 @@
 		grid: ( gutters: 1.5em )
 	));
 
+/* Custom */
+	.grecaptcha-badge { 
+		visibility: hidden;
+	}
+
 /* Basic */
 
 	@-ms-viewport {
