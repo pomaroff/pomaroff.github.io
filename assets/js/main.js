@@ -94,7 +94,17 @@
 				});
 
 			}
-
+		
+		// Go Back.
+			window.onload = function() {
+				var backButtons = document.getElementsByClassName('go-back');
+				for (var i = 0; i < backButtons.length; i++)
+				{
+					backButtons[i].addEventListener('click', function() {
+						history.back();
+					})
+				}
+			};
 	});
 
 })(jQuery);

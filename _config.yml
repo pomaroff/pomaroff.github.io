@@ -10,4 +10,9 @@ url: "https://pomaroff.github.io/" # the base hostname & protocol for your site
 markdown: kramdown
 
 sass:
-    style: compressed
+    sass_dir: assets/css
+    #style: compressed
+
+countdown_date: April 30, 2022 14:30:00 GMT+10:00
+start_time: 2:30 PM
+end_time: 10:00 PM

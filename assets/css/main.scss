@@ -1,3 +1,7 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
@@ -45,7 +49,7 @@
 	body, input, select, textarea {
 		color: _palette(fg);
 		font-family: _font(family);
-		font-size: 15pt;
+		font-size: 14pt;
 		font-weight: _font(weight);
 		letter-spacing: _size(letter-spacing);
 		line-height: 1.65em;
@@ -66,12 +70,13 @@
 
 	a {
 		@include vendor('transition', ('color #{_duration(transitions)} ease', 'border-bottom-color #{_duration(transitions)} ease'));
-		border-bottom: dotted 1px;
-		color: inherit;
+		color: _palette(link);
 		text-decoration: none;
+		border-bottom: 1px solid transparent;
 
 		&:hover {
-			border-bottom-color: transparent;
+			cursor: pointer;
+			border-bottom-color: inherit;
 		}
 	}
 
@@ -852,7 +857,7 @@
 		}
 
 		&.special {
-			background-color: palette(accent6, bg);
+			background-color: _palette(accent6, bg);
 			box-shadow: none !important;
 			color: _palette(accent6, fg-bold) !important;
 
@@ -1522,6 +1527,11 @@
 			a {
 				color: inherit;
 			}
+		}
+
+		#countdown {
+			font-size: 0.8em;
+			opacity: 0.3;
 		}
 
 		.more {

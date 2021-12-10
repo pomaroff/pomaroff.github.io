@@ -1,9 +1,16 @@
-<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6Lcc2C8dAAAAAGPt2EHyeRo5AvfLD5lOK4uP5sWX"></script>
 
 <script>
-	function onSubmit(token) {
-		document.getElementById("rsvp-form").submit();
-	}
+	$('#rsvp-form').submit(function(event) {
+        event.preventDefault(); //prevent form submit before captcha is completed
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6Lcc2C8dAAAAAGPt2EHyeRo5AvfLD5lOK4uP5sWX', {action: 'submit_rsvp'}).then(function(token) {
+			  $('#rsvp-form').prepend('<input type="hidden" name="token" value="' + token + '">');
+			  $('#rsvp-form').prepend('<input type="hidden" name="action" value="submit_rsvp">');
+			  $('#rsvp-form').unbind('submit').submit();
+          });
+        });
+    });
 </script>
 
 <section id="rsvp" class="wrapper style4">
@@ -16,13 +23,13 @@
 		<form id="rsvp-form" method="post" action="https://smartforms.dev/submit/618f94887a195017922da888">
 			<div class="row uniform">
 				<div class="4u 12u(medium)">
-					<input type="text" name="name" id="name" value="" placeholder="Full Name" />
+					<input type="text" name="name" id="name" value="" placeholder="Full Name" required />
 				</div>
 				<div class="4u 12u(medium)">
 					<input type="text" name="partner-name" id="partner-name" value="" placeholder="Partner's Full Name" />
 				</div>
 				<div class="4u 12u(medium)">
-					<input type="email" name="email" id="email" value="" placeholder="Email" />
+					<input type="email" name="email" id="email" value="" placeholder="Email" required />
 				</div>
 				<div class="6u 12u(small)">
 					<input type="radio" id="attending" name="attending" required>
@@ -40,7 +47,7 @@
 				</div>
 				<div class="12u">
 					<ul class="actions">
-						<li><button class="g-recaptcha button special" data-sitekey="6Lcc2C8dAAAAAGPt2EHyeRo5AvfLD5lOK4uP5sWX" data-callback='onSubmit' data-action='submit' data-badge="inline">Send RSVP</button></li>
+						<li><input type="submit" value="Send RSVP" class="special" /></li>
 						<li><input type="reset" value="Reset" /></li>
 					</ul>
 				</div>
