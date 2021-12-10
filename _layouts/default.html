@@ -5,9 +5,14 @@
 <body class="landing">
 {% include header.html %}
 {% include banner.html %}
-{% include content.html %}
-{% include rsvp.html %}
+
+{% if site.enabled %}
+    {% include content.html %}
+    {% include rsvp.html %}
+{% endif %}
+
 {% include footer.html %}
+
 </body>
 
 </html>

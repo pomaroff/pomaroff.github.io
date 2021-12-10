@@ -6,11 +6,16 @@
 		<p>{{ page.description }}</p>
 		<p id="countdown">&nbsp;</p>
 
+		{% if site.enabled %}
 		<ul class="actions">
 			<li><a href="#rsvp" class="button special scrolly">RSVP</a></li>
 		</ul>
+		{% endif %}
 	</div>
+
+	{% if site.enabled %}
 	<a href="#content" class="more scrolly">Learn More</a>
+	{% endif %}
 </section>
 
 <script>
