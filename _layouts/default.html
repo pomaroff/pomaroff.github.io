@@ -2,16 +2,17 @@
 <html>
 {% include head.html %}
 
-<body class="landing">
-{% include header.html %}
-{% include banner.html %}
+<body class="landing is-loading">
 
-{% if site.enabled %}
-    {% include content.html %}
-    {% include rsvp.html %}
-{% endif %}
+    {% include header.html %}
+    {% include banner.html %}
 
-{% include footer.html %}
+    {% if site.enabled %}
+        {% include content.html %}
+        {% include rsvp.html %}
+    {% endif %}
+
+    {% include footer.html %}
 
 </body>
 
