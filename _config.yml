@@ -1,7 +1,6 @@
 # Site settings
 lang: en-AU
 title: Steph & Matt
-email: matthew.pomaroff@gmail.com
 description: Stephanie Li and Matthew Pomaroff's WEdding
 baseurl: ""
 url: "https://pomaroff.github.io/" # the base hostname & protocol for your site
@@ -14,6 +13,10 @@ sass:
     style: compressed
 
 enabled: false
+
+rsvp_date: 31.03.2022
+rsvp_post: https://smartforms.dev/submit/618f94887a195017922da888
+rsvp_captcha: 6Lcc2C8dAAAAAGPt2EHyeRo5AvfLD5lOK4uP5sWX
 countdown_date: April 30, 2022 14:30:00 GMT+10:00
 start_time: 2:30 PM
 end_time: 10:00 PM
