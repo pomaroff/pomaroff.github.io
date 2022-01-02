@@ -3,7 +3,7 @@ lang: en-AU
 title: Steph & Matt
 description: Stephanie Li and Matthew Pomaroff's Wedding
 baseurl: ""
-url: "https://stephandmatt.info/"
+url: "https://stephandmatt.info"
 
 # Build settings
 markdown: kramdown
