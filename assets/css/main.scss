@@ -5,7 +5,6 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import 'font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 
 	@import 'libs/skel';
@@ -245,7 +244,7 @@
 				position: relative;
 
 				&:after {
-					content: '';
+					content: "";
 					display: block;
 					height: 1px;
 				}
@@ -315,7 +314,7 @@
 		&:before {
 			@include vendor('pointer-events', 'none');
 			color: _palette(border);
-			content: '\f078';
+			content: "\f078";
 			display: block;
 			height: _size(element-height);
 			line-height: _size(element-height);
@@ -366,7 +365,7 @@
 			&:before {
 				background: _palette(border-bg);
 				border-radius: 3px;
-				content: '';
+				content: "";
 				display: inline-block;
 				height: (_size(element-height) * 0.6);
 				left: 0;
@@ -1276,7 +1275,7 @@
 
 		&:before {
 			background: rgba(0,0,0,0);
-			content: '';
+			content: "";
 			display: block;
 			display: none;
 			height: 100%;
@@ -1437,7 +1436,7 @@
 								background-image: url('images/bars.svg');
 								background-position: right center;
 								background-repeat: no-repeat;
-								content: '';
+								content: "";
 								display: inline-block;
 								height: 3.75em;
 								vertical-align: top;
@@ -1502,7 +1501,7 @@
 				@include vendor('transition', 'width 0.85s ease');
 				@include vendor('transition-delay', '0.25s');
 				background: _palette(fg-bold);
-				content: '';
+				content: "";
 				display: block;
 				height: 2px;
 				position: absolute;
@@ -1531,7 +1530,7 @@
 
 		#countdown {
 			font-size: 0.8em;
-			opacity: 0.3;
+			opacity: 0.6;
 		}
 
 		.more {
@@ -1561,7 +1560,7 @@
 				background-repeat: no-repeat;
 				background-size: contain;
 				bottom: 4em;
-				content: '';
+				content: "";
 				display: block;
 				height: 1.5em;
 				left: 50%;
@@ -1575,7 +1574,7 @@
 			@include vendor('pointer-events', 'none');
 			@include vendor('transition', 'opacity #{_duration(fadein)} ease-in-out');
 			@include vendor('transition-delay', '1.25s');
-			content: '';
+			content: "";
 			background: _palette(bg);
 			display: block;
 			width: 100%;
