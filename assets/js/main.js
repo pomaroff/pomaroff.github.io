@@ -30,11 +30,9 @@ window.addEventListener
 			$header = $('#header');
 
 		// Mobile?
-			if (skel.vars.mobile) {
+			if (skel.vars.mobile)
 				$body.addClass('is-mobile');
-				
-				$wrapper.height(window.innerHeight);
-			} else {
+			else
 				skel
 					.on('-medium !medium', function() {
 						$body.removeClass('is-mobile');
@@ -42,7 +40,6 @@ window.addEventListener
 					.on('+medium', function() {
 						$body.addClass('is-mobile');
 					});
-			}
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
