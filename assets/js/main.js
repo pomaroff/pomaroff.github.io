@@ -1,14 +1,3 @@
-// Disable animations/transitions until the page has loaded.
-$(document).onload(function() {
-	$body.addClass('is-loading');
-});
-
-$(window).on('load', function() {
-	window.setTimeout(function() {
-		$body.removeClass('is-loading');
-	}, 100);
-});
-
 (function($) {
 
 	skel
@@ -27,6 +16,13 @@ $(window).on('load', function() {
 			$wrapper = $('#page-wrapper'),
 			$banner = $('#banner'),
 			$header = $('#header');
+
+		// Disable animations/transitions until the page has loaded.
+		$window.on('load', function() {
+			window.setTimeout(function() {
+				$body.removeClass('is-loading');
+			}, 100);
+		});
 
 		// Mobile?
 			if (skel.vars.mobile)
@@ -92,15 +88,13 @@ $(window).on('load', function() {
 			}
 		
 		// Go Back.
-			window.onload = function() {
-				var backButtons = document.getElementsByClassName('go-back');
-				for (var i = 0; i < backButtons.length; i++)
-				{
-					backButtons[i].addEventListener('click', function() {
-						history.back();
-					})
-				}
-			};
+			var backButtons = document.getElementsByClassName('go-back');
+			for (var i = 0; i < backButtons.length; i++)
+			{
+				backButtons[i].addEventListener('click', function() {
+					history.back();
+				})
+			}
 	});
 
 })(jQuery);
