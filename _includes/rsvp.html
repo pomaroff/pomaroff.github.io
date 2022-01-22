@@ -42,7 +42,7 @@
                     <label for="not-attending">I send my apologies</label>
                 </div>
             </div>
-            <div id="attending-form" style="display: none;">
+            <div id="attending-form" style="display: none;margin-top:1.5em;margin-bottom:1.5em;">
                 <div class="row uniform">
                     <div class="12u">
                         <textarea name="dietary-requirements" id="dietary-requirements" placeholder="Dietary requirements (if any)" rows="2"></textarea>
@@ -52,7 +52,7 @@
                         <label for="bringing-a-plus-one">I'm bringing a plus one</label>
                     </div>
                 </div>
-                <div class="row uniform" id="plus-one-form" style="display: none;">
+                <div class="row uniform" id="plus-one-form" style="display: none;margin-bottom:1.5em;">
                     <div class="12u">
                         <input type="text" name="plus-one-full-name" id="plus-one-full-name" value="" placeholder="Their full name" />
                     </div>
@@ -92,49 +92,3 @@
         </form>
     </div>
 </section>
-
-<script>
-    document.getElementById('attending').addEventListener('click', function(e) {
-        if (e.srcElement.checked) {
-            document.getElementById('attending-form').style.display = "block";
-        } else {
-            document.getElementById('attending-form').style.display = "none";
-        }
-    });
-
-    document.getElementById('not-attending').addEventListener('click', function(e) {
-        if (e.srcElement.checked) {
-            document.getElementById('attending-form').style.display = "none";
-        } else {
-            document.getElementById('attending-form').style.display = "block";
-        }
-    });
-
-    document.getElementById('bringing-a-plus-one').addEventListener('click', function(e) {
-        if (e.srcElement.checked) {
-            document.getElementById('plus-one-form').style.display = "block";
-            document.getElementById('plus-one-full-name').required = true;
-        } else {
-            document.getElementById('plus-one-form').style.display = "none";
-            document.getElementById('plus-one-full-name').required = false;
-        }
-    });
-
-    document.getElementById('bringing-children').addEventListener('click', function(e) {
-        if (e.srcElement.checked) {
-            document.getElementById('children-form').style.display = "block";
-            document.getElementById('children-full-names').required = true;
-        } else {
-            document.getElementById('children-form').style.display = "none";
-            document.getElementById('children-full-names').required = false;
-        }
-    });
-
-    document.getElementById('reset-rsvp-form').addEventListener('click', function(e) {
-        document.getElementById('attending-form').style.display = "none";
-        document.getElementById('plus-one-form').style.display = "none";
-        document.getElementById('children-form').style.display = "none";
-        document.getElementById('plus-one-full-name').required = false;
-        document.getElementById('children-full-names').required = false;
-    });
-</script>

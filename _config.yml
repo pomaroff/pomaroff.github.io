@@ -12,14 +12,14 @@ sass:
     sass_dir: assets/css
     style: compressed
 
-enabled: true
+enabled: false
 
-rsvp_date: 31.03.2022
+rsvp_date: 20.03.2022
 rsvp_post: https://smartforms.dev/submit/618f94887a195017922da888
 rsvp_captcha: 6Lcc2C8dAAAAAGPt2EHyeRo5AvfLD5lOK4uP5sWX
 
 gift_registry: https://www.myregistry.com/wedding-registry/stephanie-li-and-matthew-pomaroff-wantirna-south-vic/3155015
 
-countdown_date: April 30, 2022 14:30:00 GMT+10:00
-start_time: 2:30 PM
+countdown_date: April 30, 2022 15:00:00 GMT+10:00
+start_time: 3:00 PM
 end_time: 10:00 PM
