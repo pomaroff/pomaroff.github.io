@@ -1,3 +1,14 @@
+// Disable animations/transitions until the page has loaded.
+$(document).onload(function() {
+	$body.addClass('is-loading');
+});
+
+$(window).on('load', function() {
+	window.setTimeout(function() {
+		$body.removeClass('is-loading');
+	}, 100);
+});
+
 (function($) {
 
 	skel
@@ -16,15 +27,6 @@
 			$wrapper = $('#page-wrapper'),
 			$banner = $('#banner'),
 			$header = $('#header');
-
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
-
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
 
 		// Mobile?
 			if (skel.vars.mobile)
