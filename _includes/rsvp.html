@@ -1,6 +1,6 @@
 <script>
     window.recaptcha_onload = function() {
-        document.getElementById("rsvp-form").addEventListener("submit", function(e) {
+        document.getElementById('rsvp-form').addEventListener('submit', function(e) {
             event.preventDefault(); //prevent form submit before captcha is completed
 
             grecaptcha.ready(function() {
@@ -27,33 +27,65 @@
 
         <form id="rsvp-form" method="post" action="{{ site.rsvp_post }}">
             <div class="row uniform">
-                <div class="4u 12u(medium)">
-                    <input type="text" name="name" id="name" value="" placeholder="Full Name" required />
+                <div class="12u">
+                    <input type="text" name="full-name" id="full-name" value="" placeholder="Full name" required />
                 </div>
-                <div class="4u 12u(medium)">
-                    <input type="text" name="partner-name" id="partner-name" value="" placeholder="Partner's Full Name" />
-                </div>
-                <div class="4u 12u(medium)">
-                    <input type="email" name="email" id="email" value="" placeholder="Email" required />
+                <div class="12u">
+                    <input type="email" name="email" id="email" value="" placeholder="Email address" required />
                 </div>
                 <div class="12u">
                     <input type="radio" id="attending" name="attending" required>
-                    <label for="attending">We are attending</label>
+                    <label for="attending">I will be attending</label>
                 </div>
                 <div class="12u">
                     <input type="radio" id="not-attending" name="attending">
-                    <label for="not-attending">We send our apologies</label>
+                    <label for="not-attending">I send my apologies</label>
                 </div>
-                <div class="12u">
-                    <textarea name="dietary-requirements" id="dietary-requirements" placeholder="Dietary requirements" rows="3"></textarea>
+            </div>
+            <div id="attending-form" style="display: none;margin-top:1.5em;margin-bottom:1.5em;">
+                <div class="row uniform">
+                    <div class="12u">
+                        <textarea name="dietary-requirements" id="dietary-requirements" placeholder="Dietary requirements (if any)" rows="2"></textarea>
+                    </div>
+                    <div class="12u">
+                        <input type="checkbox" id="bringing-a-plus-one" name="bringing-a-plus-one">
+                        <label for="bringing-a-plus-one">I'm bringing a plus one</label>
+                    </div>
                 </div>
+                <div class="row uniform" id="plus-one-form" style="display: none;margin-bottom:1.5em;">
+                    <div class="12u">
+                        <input type="text" name="plus-one-full-name" id="plus-one-full-name" value="" placeholder="Their full name" />
+                    </div>
+                    <div class="12u">
+                        <textarea name="plus-one-dietary-requirements" id="plus-one-dietary-requirements" placeholder="Their dietary requirements (if any)" rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="row uniform">
+                    <div class="12u">
+                        <input type="checkbox" id="bringing-children" name="bringing-children">
+                        <label for="bringing-children">I'm bringing my children</label>
+                    </div>
+                </div>
+                <div class="row uniform" id="children-form" style="display: none;">
+                    <div class="12u">
+                        <textarea name="children-full-names" id="children-full-names" value="" placeholder="Their full name(s)" rows="2"></textarea>
+                    </div>
+                    <div class="12u">
+                        <textarea name="children-dietary-requirements" id="children-dietary-requirements" placeholder="Their dietary requirements (if any)" rows="2"></textarea>
+                    </div>
+                    <div class="12u">
+                        <input type="text" name="children-high-chairs" id="children-high-chairs" value="" placeholder="Do you need any high chairs?" />
+                    </div>
+                </div>
+            </div>
+            <div class="row uniform">
                 <div class="12u">
                     <textarea name="message" id="message" placeholder="Anything else we should know?" rows="6"></textarea>
                 </div>
                 <div class="12u">
                     <ul class="actions">
                         <li><input id="rsvp-form-submit" type="submit" value="Send RSVP" class="special" disabled /></li>
-                        <li><input type="reset" value="Reset" /></li>
+                        <li><input type="reset" value="Reset" id="reset-rsvp-form" /></li>
                     </ul>
                 </div>
             </div>

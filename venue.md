@@ -1,23 +1,35 @@
 ---
 layout: page
 title: The Venue
-description: The Riverstone Estate
-image: venue.jpg
+description: Venue information, transport, accommodation
+image_thumbail: venue-thumb.jpg
+header_class: venue
 permalink: /venue/
+page_order: 1
 ---
 
-## <i class="fas fa-landmark"></i> Location
+## Venue
 
-The entire day will take place at The Riverstone Estate. <a href="/schedule/">Learn more about the schedule</a>.
+The entire day will take place at *The Riverstone Estate* to make the most of this stunning vineyard. <i class="fas fa-wine-glass icon style4"></i>
 
-We're sure you'll love the venue as much as we do; perched on top of a hill, with almost a 360-degree view of the surrounding Yarra Valley in all of its Autumn colour.
+We're sure you'll love the venue as much as we do, being perched on top of a hill with a near 360-degree view of the surrounding Yarra Valley in all of its Autumn colour.
 
-## <i class="fas fa-map"></i> Address
+We can't wait! <i class="fas fa-grin-beam icon style4"></i>
 
-The Riverstone Estate<br />
-105 Skye Rd<br />
-Coldstream<br />
-VIC 3770
+## Getting there
+
+The address is:
+
+<ul style="list-style-type:none;">
+<li>The Riverstone Estate</li>
+<li>105 Skye Rd</li>
+<li>Coldstream</li>
+<li>VIC 3770</li>
+</ul>
+
+## Nearby accommodation
+
+
 
 ---
 

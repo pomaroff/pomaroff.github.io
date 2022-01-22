@@ -2,25 +2,31 @@
 layout: page
 title: Schedule
 description: Learn more about the day
-image: schedule.jpg
+image_thumbail: schedule-thumb.jpg
+header_class: schedule
 permalink: /schedule/
+page_order: 2
 ---
 
-## <i class="fas fa-heart"></i> Ceremony
+## Ceremony
 
 Please arrive by **{{site.start_time}}** for the ceremony at <a href="/venue/">The Riverstone Estate</a>.
 
-Weather permitting, the ceremony will take place outdoors, so keep an eye on the weather and bring a jacket!
+Weather permitting, the ceremony will take place outdoors, so keep an eye on the weather and be sure to bring a jacket.
 
-## <i class="fas fa-cookie-bite"></i> Canapés
+## Canapés
 
 The ceremony will be followed by canapés and drinks on the lawn overlooking the stunning Yarra Valley.
 
-## <i class="fas fa-utensils"></i> Reception
+Enjoy some lawn games, food, and drink whilst watching the sunset over the hills.
 
-The celebrations will continue on-site as we move into the dining room, enjoying a feast, (more) drinks, cake, and of course... dancing!
+## Reception
 
-## <i class="fas fa-hourglass-end"></i> Conclusion
+The celebrations will continue as we move into the dining room, enjoying a feast, (more) drinks, cake, and plenty of laughs.
+
+Don't forget to bring your dancing shoes!
+
+## Conclusion
 
 All good things must eventually come to an end, and we will be saying our farewells at approximately **{{site.end_time}}**.
 
