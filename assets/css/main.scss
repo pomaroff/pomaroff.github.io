@@ -1737,8 +1737,12 @@
 
 		#banner {
 			position: fixed;
-			height: 100%;
 			width: 100%;
+			width: -moz-available;
+			width: -webkit-fill-available;
+			height: 100%;
+			height: -moz-available;
+			height: -webkit-fill-available;
 		}
 	}
 
