@@ -1728,17 +1728,29 @@
 		}
 	}
 
-	body.is-mobile {
-		#main {
-			> header {
-				background-attachment: scroll;
-			}
+	html.is-mobile {
+		min-width: 100%;
+		min-width: -moz-available;          /* WebKit-based browsers will ignore this. */
+		min-width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+		min-width: fill-available;
+		min-height: 100%;
+		min-height: -moz-available;          /* WebKit-based browsers will ignore this. */
+		min-height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+		min-height: fill-available;
+
+		body.is-mobile, body.is-mobile #page-wrapper, body.is-mobile #page-wrapper #banner {
+			min-width: 100%;
+			min-width: -moz-available;          /* WebKit-based browsers will ignore this. */
+			min-width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+			min-width: fill-available;
+			min-height: 100%;
+			min-height: -moz-available;          /* WebKit-based browsers will ignore this. */
+			min-height: -webkit-fill-available;  /* Mozill-based browsers will ignore this. */
+			min-height: fill-available;
 		}
 
-		#banner {
-			-webkit-position: fixed;
-			-webkit-width: -webkit-fill-available;
-			-webkit-height: -webkit-fill-available;
+		body.is-mobile #page-wrapper > header {
+			background-attachment: scroll;
 		}
 	}
 
@@ -1866,7 +1878,7 @@
 		}
 
 		#footer {
-			background-color: darken(transparentize(_palette(bg), 0.15), 8);
+			background-color: darken(transparentize(_palette(bg), 0.3), 8);
 		}
 	}
 
