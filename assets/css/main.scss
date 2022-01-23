@@ -1736,9 +1736,9 @@
 		}
 
 		#banner {
-			position: -webkit-fixed;
-			width: -webkit-fill-available;
-			height: -webkit-fill-available;
+			-webkit-position: -webkit-fixed;
+			-webkit-width: -webkit-fill-available;
+			-webkit-height: -webkit-fill-available;
 		}
 	}
 
