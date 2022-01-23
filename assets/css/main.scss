@@ -1747,6 +1747,7 @@
 			min-height: -moz-available;          /* WebKit-based browsers will ignore this. */
 			min-height: -webkit-fill-available;  /* Mozill-based browsers will ignore this. */
 			min-height: fill-available;
+			height: auto;
 		}
 
 		body.is-mobile #page-wrapper > header {
