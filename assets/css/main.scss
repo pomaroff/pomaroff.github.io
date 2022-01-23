@@ -1809,11 +1809,45 @@
 			#page-wrapper {
 				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.6))', 'url("../../assets/images/banner-foreground.webp")', 'url("../../assets/images/banner-background.webp")'));
 			}
+
+			&.is-mobile {
+				#page-wrapper {
+					background: none;
+				}
+
+				#banner, .wrapper.style4 {
+					@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.6))', 'url("../../assets/images/banner-foreground.webp")', 'url("../../assets/images/banner-background.webp")'));
+					background-position: 50% 20%, 50% 100%;
+					background-repeat: no-repeat;
+					background-size: cover, auto 63%;
+				}
+
+				#footer {
+					background-color: darken(_palette(bg), 8);
+				}
+			}
 		}
 
 		&.no-webp {
 			#page-wrapper {
 				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.6))', 'url("../../assets/images/banner-foreground.png")', 'url("../../assets/images/banner-background.jpg")'));
+			}
+
+			&.is-mobile {
+				#page-wrapper {
+					background: none;
+				}
+
+				#banner, .wrapper.style4 {
+					@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.6))', 'url("../../assets/images/banner-foreground.png")', 'url("../../assets/images/banner-background.jpg")'));
+					background-position: 50% 20%, 50% 100%;
+					background-repeat: no-repeat;
+					background-size: cover, auto 63%;
+				}
+
+				#footer {
+					background-color: darken(_palette(bg), 8);
+				}
 			}
 		}
 
@@ -1828,11 +1862,5 @@
 		#footer {
 			background-color: darken(transparentize(_palette(bg), 0.15), 8);
 		}
-
-		&.is-mobile {
-			#page-wrapper {
-				background-position: 50% 20%, 50% 100%;
-				background-size: cover, auto 55%;
-			}
-		}
 	}
+
