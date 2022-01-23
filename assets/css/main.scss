@@ -1728,32 +1728,21 @@
 		}
 	}
 
-	html.is-mobile {
-		min-width: 100%;
-		min-width: -moz-available;          /* WebKit-based browsers will ignore this. */
-		min-width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-		min-width: fill-available;
-		min-height: 100%;
-		min-height: -moz-available;          /* WebKit-based browsers will ignore this. */
-		min-height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-		min-height: fill-available;
+	html.is-mobile, body.is-mobile, body.is-mobile #page-wrapper, body.is-mobile #page-wrapper #banner {
+		min-width: -webkit-fill-available;
+		min-height: -webkit-fill-available;
+	}
 
-		body.is-mobile, body.is-mobile #page-wrapper, body.is-mobile #page-wrapper #banner {
-			min-width: 100%;
-			min-width: -moz-available;          /* WebKit-based browsers will ignore this. */
-			min-width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-			min-width: fill-available;
-			min-height: 100%;
-			min-height: -moz-available;          /* WebKit-based browsers will ignore this. */
-			min-height: -webkit-fill-available;  /* Mozill-based browsers will ignore this. */
-			min-height: fill-available;
-			height: auto;
+	body.is-mobile #page-wrapper {
+		#banner {
+			max-width: -webkit-fill-available;
+			max-height: -webkit-fill-available;
 		}
 
-		body.is-mobile #page-wrapper > header {
+		> header {
 			background-attachment: scroll;
 		}
-	}
+	} 
 
 /* Footer */
 
