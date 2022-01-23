@@ -1736,13 +1736,9 @@
 		}
 
 		#banner {
-			position: fixed;
-			width: 100%;
-			width: -moz-available;
-			width: -webkit-fill-available;
-			height: 100%;
-			height: -moz-available;
-			height: -webkit-fill-available;
+			-webkit-position: -webkit-fixed;
+			-webkit-width: -webkit-fill-available;
+			-webkit-height: -webkit-fill-available;
 		}
 	}
 
