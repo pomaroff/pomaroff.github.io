@@ -1728,15 +1728,9 @@
 		}
 	}
 
-	html.is-mobile, body.is-mobile, body.is-mobile #page-wrapper, body.is-mobile #page-wrapper #banner {
-		min-width: -webkit-fill-available;
-		min-height: -webkit-fill-available;
-	}
-
 	body.is-mobile #page-wrapper {
 		#banner {
-			max-width: -webkit-fill-available;
-			max-height: -webkit-fill-available;
+			height: calc(100 * var(--vh));
 		}
 
 		> header {
