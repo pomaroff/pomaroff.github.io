@@ -12,12 +12,13 @@ page_order: 2
 
 Dress **formal**, but be mindful of the weather forecast!
 
-It will get chilly during the evening so we recommend that you bring a jacket.<br />
+It will get chilly during the evening, so we recommend that you bring a jacket.<br />
 Parts of the day will take place on the amazing lawn at The Riverstone Estate, so stilettos may not be the best option.
 
 ## Coronavirus
 
-I'm sure everyone knows the drill by now.<br />The venue requires that everyone please brings proof of COVID-19 vaccination.
+I'm sure everyone knows the drill by now.<br />
+The venue requires every attendee to bring proof of COVID-19 vaccination.
 
 ## The Schedule
 
@@ -31,12 +32,12 @@ Weather permitting, the ceremony will take place outdoors on the lawn.
 
 The ceremony will be followed by canapés and drinks on the lawn overlooking the stunning Yarra Valley.
 
-Enjoy some lawn games, food, and drink whilst we enjoy watching the sunset over the hills.
+Enjoy some lawn games, food and drink whilst we enjoy watching the sunset over the hills.
 
 ### 3. Reception
 
 The celebrations will continue into the evening as we move into the dining room.<br />
-Here we will enjoy a feast, drinks, cake, and plenty of laughs by the fireplace.
+Here, we will enjoy a feast, drinks, cake and plenty of laughs by the fireplace.
 
 Don't forget to bring your dancing shoes! <i class="fas fa-music icon style4"></i>
 
