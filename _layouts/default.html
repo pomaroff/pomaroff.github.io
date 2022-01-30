@@ -6,15 +6,19 @@ layout: html_minifier
 <html>
 {% include head.html %}
 
-<body class="landing">
+<body>
 
     {% include header.html %}
-    {% include banner.html %}
+    
+    <section class="wrapper style2">
+        <div class="inner">
 
-    {% if site.enabled %}
-        {% include content.html %}
-        {% include rsvp.html %}
-    {% endif %}
+            <div class="back-container"><a class="go-back"><i class="fas fa-backward-step"></i> Go back</a></div>
+
+            {{ content }}
+
+        </div>
+    </section>
 
     {% include footer.html %}
 

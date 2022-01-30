@@ -65,9 +65,16 @@ on_resize();
 		// Scrolly.
 			$('.scrolly')
 				.scrolly({
-					speed: 1500,
+					speed: 1000,
 					offset: $header.outerHeight()
 				});
+
+			$('.scrolly-slow')
+				.scrolly({
+					speed: 2000,
+					offset: $header.outerHeight()
+				});
+
 
 		// Menu.
 			$('#menu')

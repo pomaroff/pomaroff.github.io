@@ -4,6 +4,7 @@
 	{% for page in sorted_pages %}
 
 	{% if page.layout == 'default' %}{% continue %}{% endif %}
+	{% if page.layout == 'home' %}{% continue %}{% endif %}
 	{% if page.title %}
 
 	<section class="spotlight">
