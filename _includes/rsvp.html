@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     window.recaptcha_onload = function() {
         document.getElementById('rsvp-form').addEventListener('submit', function(e) {
             event.preventDefault(); //prevent form submit before captcha is completed
@@ -14,9 +14,9 @@
 
         document.getElementById("rsvp-form-submit").disabled = false;
     }
-</script>
+</script> -->
 
-<script src="https://www.google.com/recaptcha/api.js?render={{ site.rsvp_captcha }}&onload=recaptcha_onload" async defer></script>
+<!-- <script src="https://www.google.com/recaptcha/api.js?render={{ site.rsvp_captcha }}&onload=recaptcha_onload" async defer></script> -->
 
 <section id="rsvp" class="wrapper style4">
     <div class="inner">
@@ -84,7 +84,7 @@
                 </div>
                 <div class="12u">
                     <ul class="actions">
-                        <li><input id="rsvp-form-submit" type="submit" value="Send RSVP" class="special" disabled /></li>
+                        <li><input id="rsvp-form-submit" type="submit" value="Send RSVP" class="special" /></li>
                         <li><input type="reset" value="Reset" id="reset-rsvp-form" /></li>
                     </ul>
                 </div>
