@@ -1,0 +1,23 @@
+---
+layout: html_minifier
+---
+
+<!DOCTYPE HTML>
+<html>
+{% include head.html %}
+
+<body class="landing">
+
+    {% include header.html %}
+    {% include banner.html %}
+
+    {% if site.enabled %}
+        {% include content.html %}
+        {% include rsvp.html %}
+    {% endif %}
+
+    {% include footer.html %}
+
+</body>
+
+</html>

@@ -12,10 +12,6 @@ page_order: 3
 
 Firstly, there are no obligations to give us a wedding gift, we would just be grateful for your company on our wedding day.
 
-With that said, we know that some of you would like to purchase a gift anyway... so we have decided to create a gift registry which you may choose to purchase from - to make things that little bit easier!
+With that said, we know that some of you would like to purchase a gift anyway... so we have decided to create a gift registry, which you may choose to purchase from - to make things that little bit easier!
 
 Our gift registry can be found at <a href="{{ site.gift_registry }}">MyRegistry.com</a>.
-
----
-
-<a class="go-back">go back</a>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Home
 prefix: The wedding of
 banner: Steph & Matt
