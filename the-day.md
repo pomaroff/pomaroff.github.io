@@ -36,7 +36,7 @@ Enjoy some lawn games, food and drink whilst we enjoy watching the sunset over t
 
 ### 3. Reception
 
-The celebrations will continue into the evening as we move into the dining room.<br />
+The celebrations will continue into the evening as we move into the dining room from **{{site.reception_start_time}}**.<br />
 Here, we will enjoy a feast, drinks, cake and plenty of laughs by the fireplace.
 
 Don't forget to bring your dancing shoes! <i class="fas fa-music icon style4"></i>

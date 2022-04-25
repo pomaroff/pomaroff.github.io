@@ -22,9 +22,14 @@
     <div class="inner">
         <header>
             <h2>RSVP</h2>
+            {% if site.rsvp_enabled %}
             <p>Please let us know if you can make it!</p>
+            {% else %}
+            <p>Thank you to everyone for your RSVP's!</p>
+            {% endif %}
         </header>
 
+        {% if site.rsvp_enabled %}
         <form id="rsvp-form" method="post" action="{{ site.rsvp_post }}">
             <div class="row uniform">
                 <div class="12u">
@@ -90,5 +95,6 @@
                 </div>
             </div>
         </form>
+        {% endif %}
     </div>
 </section>

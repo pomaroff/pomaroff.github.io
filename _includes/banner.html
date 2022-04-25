@@ -9,7 +9,9 @@
 
 		{% if site.enabled %}
 		<ul class="actions">
+			{% if site.rsvp_enabled %}
 			<li><a href="#rsvp" class="button scrolly-slow">RSVP</a></li>
+			{% endif %}
 		</ul>
 		{% endif %}
 	</div>
